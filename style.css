@@ -11,7 +11,7 @@
     --secondary-bg: #2C2C4E;
     --text-white: #FFFFFF;
     --text-gray: #B1B1B1;
-    --accent-red: #E94560;
+    --accent-red: #b545e9;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
@@ -151,7 +151,7 @@ section:last-of-type {
     background-color: var(--secondary-bg);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(59, 29, 80, 0.2);
     text-align: center;
     display: flex;
     flex-direction: column;

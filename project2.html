@@ -13,7 +13,7 @@
 
     <!-- Header / Navigation Bar -->
     <header>
-        <a href="index.html" class="logo">YOUR INITIALS</a>
+        <a href="index.html" class="logo">EL</a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,29 +30,167 @@
         <h1>Programming Project Two</h1>
         
         <div class="project-detail-container">
-            <h2>Project Description</h2>
+            <h2>Amazon Purchases</h2>
             <p style="color: var(--text-gray);">
                 A detailed description of the project, including its purpose, the problem it solves, technologies used, and your specific role or contributions. Explain the key features and the outcome of the project.
             </p>
 
             <h2>Example Execution</h2>
-            <img src="https://placehold.co/800x450/2C2C4E/FFFFFF?text=Screenshot+of+Execution" alt="Screenshot of Project 2 Execution">
+            <img src="media\amazonPurchases.png" alt="Screenshot of Project 2 Execution">
 
             <h2>Project Code</h2>
             <pre><code>
-// Paste your well-commented code here.
-// This is another example.
-class Portfolio {
-    constructor(name) {
-        this.creator = name;
-        this.projects = [];
-    }
+import { List } from "@mui/material";
+import * as React from "react";
+import AddSet from "./AddSet";
+import SetDropdown from "./SetDropdown";
 
-    addProject(project) {
-        this.projects.push(project);
-        console.log(`${project} added to portfolio.`);
-    }
+function ValuesSetTab () {
+
+    const [openSection, setOpenSection] = React.useState(null);
+
+    const sins = [
+    {
+      name: "Pride",
+      description:
+        "Excessive belief in one's own abilities, interfering with recognition of the grace of God. Known as Vanity and called the sin from which all others arise.",
+    },
+    {
+      name: "Greed / Avarice",
+      description:
+        "The desire for material wealth or gain while ignoring the spiritual. Also called Avarice or Covetousness.",
+    },
+    {
+      name: "Envy",
+      description:
+        "The desire for others' traits, status, abilities, or situation.",
+    },
+    {
+      name: "Wrath / Anger",
+      description:
+        "Manifested in the individual who spurns love and opts instead for fury.",
+    },
+    {
+      name: "Lust",
+      description:
+        "An inordinate craving for the pleasures of the body.",
+    },
+    {
+      name: "Gluttony",
+      description:
+        "An inordinate desire to consume more than what one requires.",
+    },
+    {
+      name: "Sloth / Acedia",
+      description: "The avoidance of physical or spiritual work.",
+    },
+    ];
+
+    const love = [
+        {
+            name: "Words of Affirmation",
+            description: "Sharing encouraging messages, providing meaningful praise."
+        },
+        {
+            name: "Quality Time",
+            description: "Time spent engaging in shared activities, with undivided attention.",
+
+        },
+        {
+            name: "Receiving Gifts",
+            description: "Giving and receiving tokens of affection."
+        },
+        {
+            name: "Acts of Service",
+            description: "Doing helpful things for another, providing service."
+        },
+        {
+            name: "Physical Touch",
+            description: "Being physically engaged in close proximity"
+        }
+    ]
+
+    const heaven = [
+        {
+            name: "Prudence",
+            description: "Disposes the practical reason to discern, in every circumstance, our true good and to choose the right means for achieving it."
+        },
+        {
+            name: "Justice",
+            description: "The firm and constant will to give God and neighbor their due."
+        },
+        {
+            name: "Fortitude",
+            description: "Firmness in difficulties and constancy in the pursuit of the good."
+        },
+        {
+            name: "Temperance",
+            description: "Moderates the attraction of the pleasures of the senses and provides balance in the use of created goods."
+        },
+        {
+            name: "Faith",
+            description: "Belief in God and all that he has revealed to us and that Holy Church proposes for our belief."
+        },
+        {
+            name: "Hope",
+            description: "Desiring, and with steadfast hope awaiting from God, eternal life and graces to merit it."
+        },
+        {
+            name: "Charity",
+            description: "Loving God above all things and our neighbor as ourselves for love of God."
+        }
+    ]
+
+    const capital = [
+        {
+            name: "Humility",
+            description: "Being inclined to the lowest place."
+        },
+        {
+            name: "Charity",
+            description: "Loving God above all things and our neighbor as ourselves for love of God."
+        },
+        {
+            name: "Kindness/Mercy",
+            description: "Being bountiful to others, supplying for the defect in one's neighbor."
+        },
+        {
+            name: "Patience",
+            description: "Enduring difficult circumstances"
+        },
+        {
+            name: "Chastity",
+            description: "The successful integration of sexuality within the person and thus the inner unity of man in his bodily and spiritual being."
+        },
+        {
+            name: "Temperance",
+            description: "Moderating the attraction of the pleasures of the senses and providing balance in the use of created goods."
+        },
+        {
+            name: "Diligence",
+            description: "Carefulness and persistent effort or work."
+        }
+    ]
+    
+    const [capitalItems, setCapitalItems] = React.useState(capital);
+    const [sinItems, setSinItems] = React.useState(sins);
+    const [heavenItems, setHeavenItems] = React.useState(heaven);
+    const [loveItems, setLoveItems] = React.useState(love);
+
+    const [activeLove, setActiveLoveButton] = React.useState(false)
+    const [activeSins, setActiveSinsButton] = React.useState(false)
+    const [activeHeaven, setActiveHeavenButton] = React.useState(false)
+    const [activeCapital, setActiveCapitalButton] = React.useState(false)
+
+    return (
+            //React Code
+    )
+   
 }
+
+
+
+export default ValuesSetTab;
             </code></pre>
         </div>
     </main>
@@ -60,9 +198,9 @@ class Portfolio {
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ethanlukandwa/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/3luko" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:jlukanda@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <p>Designed by [Your Name] &copy; 2025</p>
     </footer>
