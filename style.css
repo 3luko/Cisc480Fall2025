@@ -123,11 +123,8 @@ section:last-of-type {
 }
 
 .main-image img {
-    border-radius: 50%;
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    border: 5px solid var(--accent-red);
 }
 
 /* projects homepage */
