@@ -1,11 +1,7 @@
-/* CISC 480 Portfolio Stylesheet
-   Based on the sampleindex.html layout and Design Doc specifications.
-*/
-
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
 
-/* CSS Variables for Colors and Fonts */
+/* color and font variables */
 :root {
     --primary-bg: #1A1A2E;
     --secondary-bg: #2C2C4E;
@@ -16,7 +12,7 @@
     --font-body: 'Open Sans', sans-serif;
 }
 
-/* General Body Styles */
+/* general style */
 body {
     background-color: var(--primary-bg);
     color: var(--text-white);
@@ -46,12 +42,12 @@ a:hover {
     color: var(--text-white);
 }
 
-/* Reusable Button Style */
+/* buttons style */
 .btn {
     display: inline-block;
     padding: 12px 25px;
     background-color: var(--accent-red);
-    color: var(--text-white) !important; /* Ensure text is white */
+    color: var(--text-white) !important;
     border-radius: 5px;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -63,9 +59,8 @@ a:hover {
 }
 
 
-/* --- Components --- */
 
-/* Header & Navigation */
+/* header and nav bar */
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -97,15 +92,11 @@ header nav ul {
 header nav a {
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--text-white); /* Navigation links are white */
-}
-
-header nav a:hover, header nav a.active {
-    color: var(--accent-red); /* Hover/active links are red */
+    color: var(--text-white);
 }
 
 
-/* Sections for Single-Page Layout */
+/* sections for non-home page */
 section {
     padding: 120px 5%;
     min-height: 60vh;
@@ -116,7 +107,7 @@ section:last-of-type {
     border-bottom: none;
 }
 
-/* Main Section (Top of index.html) */
+/* main index.html */
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +115,7 @@ section:last-of-type {
     justify-content: center;
     text-align: center;
     gap: 50px;
-    padding-top: 150px; /* Extra padding to account for fixed header */
+    padding-top: 150px;
 }
 
 .main-content {
@@ -139,7 +130,7 @@ section:last-of-type {
     border: 5px solid var(--accent-red);
 }
 
-/* Projects Section */
+/* projects homepage */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -156,12 +147,7 @@ section:last-of-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
-}
-
-.project-card:hover { /* Added hover effect */
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(233, 69, 96, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img {
@@ -170,7 +156,7 @@ section:last-of-type {
     margin-bottom: 15px;
 }
 
-/* Embedded Document Pages (Resume/Essay) */
+/* embedded resume and essay */
 .document-container {
     max-width: 900px;
     margin: 40px auto;
@@ -188,12 +174,12 @@ section:last-of-type {
 
 .document-embed {
     width: 100%;
-    height: 1000px; /* Tall height for full page view */
+    height: 1000px;
     border: 2px solid var(--secondary-bg);
     border-radius: 10px;
 }
 
-/* Individual Project Detail Pages */
+/* individual projects */
 .project-detail-container {
     max-width: 900px;
     margin: auto;
@@ -218,7 +204,7 @@ pre {
 }
 
 
-/* Footer */
+/* footer */
 .main-footer {
     text-align: center;
     padding: 30px;
