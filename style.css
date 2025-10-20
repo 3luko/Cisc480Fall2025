@@ -218,7 +218,8 @@ pre {
 }
 
 
-/* Footer */
+/* Footer (merged to avoid duplicate text-align) */
+footer,
 .main-footer {
     text-align: center;
     padding: 30px;
@@ -229,5 +230,20 @@ pre {
     margin: 0 15px;
     font-size: 1.2rem;
     color: var(--text-white);
+}
+
+/* Center resume paragraph/button, video (and its caption), and essay button */
+#resume,
+#video,
+#essay {
+    text-align: center;
+}
+
+/* Center the embedded YouTube iframe responsively */
+.video-container iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
