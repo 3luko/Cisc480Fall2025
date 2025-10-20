@@ -1,8 +1,4 @@
-/* CISC 480 Portfolio Stylesheet
-   Based on the sampleindex.html layout and Design Doc specifications.
-*/
 
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
 
 /* CSS Variables for Colors and Fonts */
@@ -11,7 +7,7 @@
     --secondary-bg: #2C2C4E;
     --text-white: #FFFFFF;
     --text-gray: #B1B1B1;
-    --accent-red: #E94560;
+    --accent-purple: #b545e9;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
@@ -29,7 +25,7 @@ body {
 
 h1, h2, h3 {
     font-family: var(--font-heading);
-    color: var(--accent-red);
+    color: var(--accent-purple);
 }
 
 h1 { font-size: 3rem; }
@@ -37,7 +33,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
 h3 { font-size: 1.5rem; }
 
 a {
-    color: var(--accent-red);
+    color: var(--accent-purple);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -50,7 +46,7 @@ a:hover {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: var(--accent-red);
+    background-color: var(--accent-purple);
     color: var(--text-white) !important; /* Ensure text is white */
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -59,11 +55,10 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: #d43d51;
+    background-color: #833dd4;
 }
 
 
-/* --- Components --- */
 
 /* Header & Navigation */
 .header-nav {
@@ -83,7 +78,7 @@ a:hover {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--accent-red);
+    color: var(--accent-purple);
 }
 
 header nav ul {
@@ -101,7 +96,7 @@ header nav a {
 }
 
 header nav a:hover, header nav a.active {
-    color: var(--accent-red); /* Hover/active links are red */
+    color: var(--accent-purple); /* Hover/active links are red */
 }
 
 
@@ -136,7 +131,7 @@ section:last-of-type {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid var(--accent-red);
+    border: 5px solid var(--accent-purple);
 }
 
 /* Projects Section */
