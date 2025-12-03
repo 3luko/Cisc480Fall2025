@@ -35,7 +35,7 @@ h3 { font-size: 1.5rem; }
 a {
     color: var(--accent-purple);
     text-decoration: none;
-    transition: color 0.3s;
+    /* transition: color 0.3s; */
 }
 
 a:hover {
@@ -47,9 +47,9 @@ a:hover {
     display: inline-block;
     padding: 12px 25px;
     background-color: var(--accent-purple);
-    color: var(--text-white) !important; /* Ensure text is white */
+    color: var(--text-white) !important;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
     font-weight: bold;
     text-align: center;
 }
@@ -92,12 +92,13 @@ header nav ul {
 header nav a {
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--text-white); /* Navigation links are white */
+    color: var(--text-white);
 }
 
-header nav a:hover, header nav a.active {
-    color: var(--accent-purple); /* Hover/active links are red */
-}
+/* header nav a:hover, header nav a.active {
+    color: var(--accent-purple);
+} 
+*/
 
 
 /* Sections for Single-Page Layout */
@@ -127,11 +128,11 @@ section:last-of-type {
 }
 
 .hero-image img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    border: 5px solid var(--accent-purple);
+    /* object-fit: cover; */
+    /* border: 5px solid var(--accent-purple); */
 }
 
 /* Projects Section */
@@ -151,13 +152,14 @@ section:last-of-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 }
 
-.project-card:hover { /* Added hover effect */
+/* .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(233, 69, 96, 0.2);
-}
+} 
+*/
 
 .project-card img {
     width: 100%;
@@ -187,8 +189,7 @@ section:last-of-type {
     border: 2px solid var(--secondary-bg);
     border-radius: 10px;
 }
-
-/* Individual Project Detail Pages */
+/* 
 .project-detail-container {
     max-width: 900px;
     margin: auto;
@@ -210,10 +211,10 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
     font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 
-/* Footer (merged to avoid duplicate text-align) */
+/* Footer (merged to avoid duplicate text-align)
 footer,
 .main-footer {
     text-align: center;
@@ -225,7 +226,7 @@ footer,
     margin: 0 15px;
     font-size: 1.2rem;
     color: var(--text-white);
-}
+} */
 
 /* Center resume paragraph/button, video (and its caption), and essay button */
 #resume,
