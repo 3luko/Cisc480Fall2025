@@ -227,6 +227,15 @@ footer,
     color: var(--text-white);
 }
 
+.skills-list{
+    text-align: center;
+}
+
+.skills-list ul{
+    display: inline-block;
+    text-align: left;
+}
+
 /* Center resume paragraph/button, video (and its caption), and essay button */
 #resume,
 #video,
