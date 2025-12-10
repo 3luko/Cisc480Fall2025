@@ -213,8 +213,8 @@ pre {
 }
 
 
-Footer (merged to avoid duplicate text-align)
-footer,
+/*Footer (merged to avoid duplicate text-align)*/
+#footer,
 .main-footer {
     text-align: center;
     padding: 30px;
