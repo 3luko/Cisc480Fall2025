@@ -34,12 +34,12 @@ h3 { font-size: 1.5rem; }
 a {
     color: var(--accent-purple);
     text-decoration: none;
-    /* transition: color 0.3s; */
+    transition: color 0.3s;
 }
 
-/* a:hover {
+a:hover {
     color: var(--text-white);
-} */
+}
 
 /* Reusable Button Style */
 .btn {
@@ -48,14 +48,14 @@ a {
     background-color: var(--accent-purple);
     color: var(--text-white);
     border-radius: 5px;
-    /* transition: background-color 0.3s; */
+    transition: background-color 0.3s;
     font-weight: bold;
     text-align: center;
 }
 
-/* .btn:hover {
+.btn:hover {
     background-color: #833dd4;
-} */
+}
 
 
 
@@ -94,10 +94,10 @@ header nav a {
     color: var(--text-white);
 }
 
-/* header nav a:hover, header nav a.active {
+header nav a:hover, header nav a.active {
     color: var(--accent-purple);
-} 
-*/
+}
+
 
 
 /* Sections for Single-Page Layout */
@@ -151,14 +151,14 @@ section:last-of-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* .project-card:hover {
+.project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(233, 69, 96, 0.2);
 } 
-*/
+
 
 .project-card img {
     width: 100%;
@@ -188,7 +188,7 @@ section:last-of-type {
     border: 2px solid var(--secondary-bg);
     border-radius: 10px;
 }
-/* 
+
 .project-detail-container {
     max-width: 900px;
     margin: auto;
@@ -210,10 +210,10 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
     font-family: 'Courier New', Courier, monospace;
-} */
+}
 
 
-/* Footer (merged to avoid duplicate text-align)
+Footer (merged to avoid duplicate text-align)
 footer,
 .main-footer {
     text-align: center;
@@ -225,7 +225,7 @@ footer,
     margin: 0 15px;
     font-size: 1.2rem;
     color: var(--text-white);
-} */
+}
 
 /* Center resume paragraph/button, video (and its caption), and essay button */
 #resume,
